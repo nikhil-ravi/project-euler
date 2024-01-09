@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "project-euler"
+version = "0.1.0"
+description = ""
+authors = ["Nikhil Ravi <nr337@cornell.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+markdownify = "^0.11.6"
+codegen = "^1.0"
+bs4 = "^0.0.1"
+black = "^23.12.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.28.0"
+notebook = "^7.0.6"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Scripts
+[tool.poetry.scripts]
+project-euler = "project_euler.__init__:runner"
